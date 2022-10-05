@@ -1,0 +1,34 @@
+.chat-items{
+	background-color: rgb(140, 137, 114);
+	padding-left: 10px;
+	border-radius: 10px;
+}
+
+.chat-items h2{
+	color: white;
+	text-align: center;
+}
+
+.message-item{
+	width: 95%;
+	margin-top: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: rgb(98, 11, 27);
+	border: 1px solid white;
+	border-radius: 20px;
+}
+
+.message-item h3{
+	color: rgb(61, 10, 109);
+	text-align: center;
+}
+.message-item h4{
+	color: rgb(65, 5, 40);
+	font-size: 22px;
+	text-align:justify;
+}
+.message-item p{
+	text-align: end;
+	color: white;
+}

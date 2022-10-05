@@ -1,0 +1,15 @@
+
+
+.itemMess{
+	color: rgb(26, 5, 100);
+	font-weight: 600;
+}
+
+.input-profile{
+	margin-left: 10px;	
+	transform:scale(1.7);
+	opacity:0.9;
+	cursor:pointer;
+		
+}
+
