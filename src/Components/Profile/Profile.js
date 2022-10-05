@@ -19,7 +19,7 @@ export default function Profile() {
 
 			<div>
 				<label>
-					Задание к 6-му уроку
+					Задание к 5-му уроку
 						<input className='input-profile' 
 						type='checkbox' 
 						value={isCheket} 
