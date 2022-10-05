@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
 	<nav className='nav' >
 			<div className='item'>
-				<NavLink to={'/'}>Home</NavLink>
+				<NavLink to={'/home'}>Home</NavLink>
 			</div>
 			<div className='item'>
 				<NavLink to={'/profile'}>Profile</NavLink>
