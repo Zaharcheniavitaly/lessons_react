@@ -68,7 +68,9 @@ const ChatList = ({chats}) =>{
 						
 						<Link className="mess-name"
 						to={`${id}`}>{e.recipient}</Link>
-						<p className="chat-delete">❌</p>
+						<p className="chat-delete">
+						<button>❌</button>
+						</p>
             </div>)}
         </div>
     )
