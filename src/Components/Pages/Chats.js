@@ -36,7 +36,7 @@ const ChatsPage = () =>{
     return (
 			<div className="dialogs">
 				<div>
-						<h2>Список чатов</h2>
+						<h2>Список чатов: {chats.length}</h2>
 						<div className="chat-item">
 						<ChatList 
 						chats={chats}/>
