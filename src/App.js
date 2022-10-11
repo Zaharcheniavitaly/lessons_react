@@ -6,7 +6,8 @@ import Profile from './Components/Profile/Profile';
 import {Routes, Route} from 'react-router-dom';
 import HomePage from './Components/Pages/HomePage';
 import Notfoundpage from './Components/Pages/Notfoundpage';
-import ChatsPage from './Components/Pages/Chats';
+import Chats from './Components/Pages/Chats';
+import Message from './Components/Pages/Message';
 
 
 
@@ -19,10 +20,11 @@ function App() {
 			<Navbar />
 			<div className='app-wrapper-content'>
 				<Routes>
-						<Route path="/home" element={<HomePage userName={'Преподаватель'}/> }/>
-						<Route path="/messages" element={<ChatsPage /> }>
-								<Route path=':chatId' element = {<ChatsPage/>}/>
+						<Route path="/home" element={<HomePage userName={'Пользователь'}/> }/>
+						<Route path="/messages" element={<Chats /> }>
+							<Route path=":id" element = {<Message />}/>
 						</Route>
+
 						
 						<Route path="/profile" element={<Profile /> }/>
 						<Route path="*" element={<Notfoundpage /> }/>
