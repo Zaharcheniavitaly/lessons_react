@@ -36,21 +36,51 @@ const ChatsPage = () =>{
     return (
 			<div className="dialogs">
 				<div>
-						<h2>Список чатов: {chats.length}</h2>
+						<h2>Список чатов</h2>
 						<div className="chat-item">
-						<ChatList 
-						chats={chats}/>
+						
+
+
+						<div className="chat-list">
+						{chats.map((e,id) =>
+							<div className="name-delete" 
+									key={id}>
+		
+									<button onClick={() =>{
+										setChats((p) => p.filter((el) =>el !== p[id]))								 
+									}} className="chat-delete">❌</button>
+									
+									<Link className="mess-name"
+									to={`${id}`}>
+									{e.recipient}
+									</Link>							
+			
+							</div>)}
+					  </div>
+
+
+						
 						<button className="add-button" 
 						onClick={()=>{
 								setChats(p => [...p, chatsPlaceholder[0]])
 						}}>
 						Добавить чат
 						</button>
+
+
+
+						
+
+
+						
 					</div>
 				</div>
 				{
 					chatId && chats[chatId] ? <Chat chat={chats[chatId]}/> : <h2>Выберите чат</h2>
 				}
+
+
+				
 			</div>
        
     )
@@ -58,22 +88,17 @@ const ChatsPage = () =>{
 
 
 
-const ChatList = ({chats}) =>{
+// const ChatList = ({chats, setChats}) =>{
     
-    return(
-        <div className="chat-list">
-         {chats.map((e,id) =>
-            <div className="name-delete" 
-						key={id}>
-						
-						<Link className="mess-name"
-						to={`${id}`}>{e.recipient}</Link>
-						<p className="chat-delete">
-						<button>❌</button>
-						</p>
-            </div>)}
-        </div>
-    )
-}
+//     return( )
+// }
 
 export default ChatsPage
+
+// setChatList((p) => p.filter(el => el !== p[index]))
+
+// <button onClick={() =>{
+// 	setChats((p) => p.filter((el) =>el !== p[id]))
+
+	 
+// }} className="chat-delete">❌</button>
