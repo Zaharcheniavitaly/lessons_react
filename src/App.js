@@ -19,7 +19,7 @@ function App() {
 			<Navbar />
 			<div className='app-wrapper-content'>
 				<Routes>
-						<Route path="/home" element={<HomePage userName={'Преподаватель'}/> }/>
+						<Route path="/home" element={<HomePage userName={'Пользователь'}/> }/>
 						<Route path="/messages" element={<ChatsPage /> }>
 								<Route path=':chatId' element = {<ChatsPage/>}/>
 						</Route>
