@@ -3,7 +3,29 @@ import { Link, useParams } from "react-router-dom"
 import Chat from "../Dialogs/Message/Chat";
 import "./Chats.css";
 
-
+// const chatsPlaceholder = [
+//     {   
+//       id: 1,
+// 		recipient:"Виталий",
+//       messages:[
+//             {
+//                 author:'Андрей',
+//                 text:'Привет',
+//                 date: new Date().toLocaleTimeString()
+//             },
+//             {
+//                 author:'Виктория',
+//                 text:'И тебе привет',
+//                 date: new Date().toLocaleTimeString()
+//             },
+//         ]
+//     },
+//     {   
+// 		id: 2,
+// 		recipient:"Марина",
+//       messages:[]
+//     },
+// ]
 
 const ChatsPage = () =>{
 

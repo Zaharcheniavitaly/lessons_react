@@ -7,8 +7,8 @@ const Chat = ({chat}) => {
         <div className="chat-items">
 		  <h2>Сообщения</h2>
             {
-                chat.messages.map((e,i)=>					 
-                    <div className="message-item" key={i}>
+                chat.messages.map((e,i)=>
+                    <div className="message-item">
                         <h3>{e.author}</h3>
                         <h4>{e.text}</h4>
                         <p>{e.date}</p>
